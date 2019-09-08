@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fizzBuzz</title>
+</head>
+<body>
+    <h2>JavaScript Arrays</h2>
+
+    <button onclick="fizzBuzz()">Click here</button>
+    <p id="display"></p>
+
+    <script>
+        function fizzBuzz(){ 
+        var alist = [1,2,3,4,10,11,15];
+        var blist = [5,6,7,8,9,12,13,14];
+        var ablist = alist.concat(blist);
+        var ab = ablist.length;
+        var show;
+        if (ab % 3 === 0 && ab % 5 === 0) {
+            show = "Fizzbuzz";
+        }else if(ab % 3 === 0) {
+            show = "Fizz";
+        }else if(ab % 5 === 0) {
+            show = "buzz";
+        }else {
+            show = "null";
+        }
+        document.getElementById("display").innerHTML = show;
+        }
+    </script>
+</body>
+</html>
