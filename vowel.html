@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Array Method</h2>
+
+    
+    <p>Hey, how is home?</p>
+    <p id="display"></p>
+
+    <script>
+        
+        var str = "Hey, how is home?";
+        count(str);
+        
+        function count(str){
+
+            var dup = [];
+            var vowel = [];
+            
+            var res = str.match(/[aeiou]/gi);
+            dup.push(res);
+           
+               for(var i = o; i <= str.length; i++){
+                   for(var j = i+1; j <= str.length; j++){
+                       if(str[j] == str[i]){
+                           vowel.push(str[j]);//.concat(res))
+                       }
+                   }
+               }
+               var join = dup.concat(vowel);
+               document.getElementById("display").innerHTML = join;
+           }
+        
+    </script>
+</body>
+</html>
